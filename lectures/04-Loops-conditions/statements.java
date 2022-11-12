@@ -1,3 +1,4 @@
+package com.dinesh;
 
 public class statements {
     public static void main(String[] args) {

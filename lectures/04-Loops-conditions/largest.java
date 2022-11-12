@@ -1,3 +1,4 @@
+package com.dinesh;
 
 import java.util.Scanner;
 
