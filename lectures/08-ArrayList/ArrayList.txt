@@ -1,0 +1,19 @@
+
+// Array List
+
+    array - | 0 | 1 | 2 | --- continuous , fixed size,
+
+    -  arraylist overcomes properties of fixed size, size is variable
+    -  not continuous
+    0 <---> 1
+
+            |
+            2 <-----> 3
+
+
+            objects
+
+            ArrayList -  add , get , modify(add in between, change), remove, iterate/operations
+
+
+
