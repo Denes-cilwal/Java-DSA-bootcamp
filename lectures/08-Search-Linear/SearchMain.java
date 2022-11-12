@@ -1,6 +1,6 @@
 
 
-public class Main {
+public class SearchMain {
     public static void main(String[] args) {
         int[] num = {12,3,4,15,6,8,9,10,14,15};
         int target = 15;

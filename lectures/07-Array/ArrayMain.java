@@ -1,4 +1,4 @@
-public class Main {
+public class ArrayMain {
 
     public static void main(String[] args) {
         // Q : store a number
