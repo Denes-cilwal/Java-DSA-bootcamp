@@ -23,11 +23,17 @@ public class PassingExample {
 /*
     stack                  Heap
     newName ------>   Lionel Messi()
-    // when newName is passed the value of reference variable is passed
+    // when newName is passed the copy of value of reference variable is passed
     // copy of reference variable is passed
     // both reference variable pointing to same object
     newName -----------
                        |  -----"Lionel Messi"
                        |
     name---------------
+
+    // creating newObjectReferencesVar
+    - not changing object but creating new object
+    newName ------- "Lionel Messi"(no change in original scope)
+
+    name ---------- "david"(only change in its scope)
  */

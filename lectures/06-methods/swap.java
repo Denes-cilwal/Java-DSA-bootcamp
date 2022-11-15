@@ -8,7 +8,7 @@ public class swap {
 //        a = b;
 //        b = temp;
 
-        swap(a, b);
+        swap(a, b); // is this actually going to swap or not - Ans is no
         System.out.println(a + ""+ b);
 
 

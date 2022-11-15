@@ -28,6 +28,12 @@ public class typePromotion {
         double ans = d + e + f + g;
         System.out.println(ans);
 
+        // wrong type promotions in Expressions
+        byte n = 5;
+        // type promotion with type casting
+       byte  m = (byte)(n * 2);
+        System.out.println(m);
+
     }
 
 }

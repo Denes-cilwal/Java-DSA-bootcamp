@@ -1,16 +1,23 @@
 
 public class Scope {
     public static void main(String[] args) {
-        int a =  10;
+        // every variable defined here will be accessed within this block
+        int a = 20;
         int b  = 20;
 
         //  System.out.println(num); // num do not have scope over here
 
-        /*
+
         {
-            int a =  78; // // re declared with in this block
+            System.out.println(a);
         }
-        */
+            a =  78; // allowed
+//            int a =  68; // already defined in this scope , same block cannot be initialized again
+         int c = 23;
+            System.out.println(c);
+//        }
+        System.out.println(c); // cannot be acess outside the block
+
         a = 90; // can be modified
 
 
@@ -24,6 +31,6 @@ public class Scope {
     static void random(){
         int num =  67;
         System.out.println(num);
-        //   System.out.println(a);  // scoping concepts learned
+//           System.out.println(a);  // scoping concepts learned
     }
 }

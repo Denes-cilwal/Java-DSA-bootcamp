@@ -10,7 +10,7 @@ public class ChangedValue {
     }
 
     static void change(int[] num){
-        // num get value of the reference because in java no pointer address concept
+        // num get value of the reference because in java no pointer  concept
         // but this is still call by value
         num[0] = 99; // you make change to object through this ref variable, same object will be changed , modifying object
     }
