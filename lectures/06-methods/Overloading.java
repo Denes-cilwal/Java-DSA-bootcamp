@@ -8,6 +8,7 @@ public class Overloading {
 
     // two function can exist if same function have same name but diff args datatype
     // overloading happens in compile time, decides when function to run
+    // calling happens in call stack frame, needs to decide which function to call
     static void fun(int a){
         System.out.println(a);
     }

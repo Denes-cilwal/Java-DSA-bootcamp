@@ -1,4 +1,7 @@
-public class swap {
+public class SwapPrimitives {
+
+    // pass by value vs pass by reference
+    // java always call by value
     public static void main(String[] args) {
         int a  =10;
         int b = 20;
@@ -9,15 +12,21 @@ public class swap {
 //        b = temp;
 
         swap(a, b); // is this actually going to swap or not - Ans is no
-        System.out.println(a + ""+ b);
+        System.out.println("a =" + a);
+        System.out.println("b =" + b);
 
 
     }
 
     static void swap(int a, int b) {
+
+        // a and b scope is till functions
         int temp = a;
         a = b;
         b = temp;
+
+        System.out.println("a =" + a);
+        System.out.println("b =" + b);
     }
 
 

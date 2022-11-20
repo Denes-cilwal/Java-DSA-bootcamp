@@ -10,6 +10,7 @@ public class VarArgs{
         // if you do not know numbers of args to be taken
         // internally it is taking array in functions
         System.out.println(Arrays.toString(v));
+
     }
 
     // multiple args type

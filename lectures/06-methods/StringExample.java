@@ -11,7 +11,6 @@ public class StringExample {
         System.out.println(personalized);
         sum3(1,2);
     }
-
     static String myGreet(String name) {
 
         return "Welcome" + name;

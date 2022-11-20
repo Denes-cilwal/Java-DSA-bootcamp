@@ -9,8 +9,10 @@ public class Scope {
 
 
         {
+            int s = 45;
             System.out.println(a);
         }
+//        System.out.println(s); //not allowed
             a =  78; // allowed
 //            int a =  68; // already defined in this scope , same block cannot be initialized again
          int c = 23;
