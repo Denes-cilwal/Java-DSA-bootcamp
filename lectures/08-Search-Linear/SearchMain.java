@@ -1,11 +1,29 @@
 
-
+// Time complexity
+/*
+-  linear Search -  best case O(1) - size won't be mattering - 1 comparison made
+ - worst case O(N) - if you do not find the item iterate through every time and in the end says it
+ did-not found.
+ if size of array is 100 then 100 comparisons made
+ Time
+ |
+ |
+ |
+ |
+ |
+ |_____________________
+     size
+ */
 public class SearchMain {
     public static void main(String[] args) {
         int[] num = {12,3,4,15,6,8,9,10,14,15};
         int target = 15;
-        int ans =  linearSearch(num, target);
-        System.out.println(ans);
+        int index =  linearSearch(num, target);
+        if (index == -1){
+            System.out.println("NOT Found");
+        }else {
+            System.out.println("Key is at index:"+ index);
+        }
     }
 
     // search for target and return the true or bool
@@ -65,6 +83,8 @@ public class SearchMain {
             if(element == target){
                 return index;
             }
+
+
         }
         // this line will execute of none of the return statements above have executed
         // hence no target found
