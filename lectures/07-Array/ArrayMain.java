@@ -12,12 +12,15 @@ public class ArrayMain {
         int a5=20;
 
         // array is collection of primitive, complex data types
+        // list of elements of same type
+        // placed in contiguous memory location
         // syntax
         // datatype[] variable_name  = new datatype[size]
         // stores 5 roll no
         // data type must be same
 
         int[] num = new int[5];
+        // int[] - represent type of data stored in data structure
 //        or directly
         // referencing variable is pointing to array objects
         int[] num2 = {23, 12,45,67,67};
@@ -27,7 +30,7 @@ public class ArrayMain {
         int[] ros; // declare of array, here ros is getting defined into the stack(not pointing to object here)
         ros = new int[5]; //  ;actual memory creation (actual object is being created in the heap memory)
 
-
+// size is defined in compile time not in runtime(size does not depend upon run time )
         /*
         compile  time()                run time (dynamic memory allocation or execution time)
         int [] arr = new int[5]; - creating object in heap memory
@@ -56,13 +59,14 @@ public class ArrayMain {
         // null cannot be assigned to primitives
         // null is just literal
         // by default value of what reference variables points to
-        // you can assignes to only any non-primitives but you cannot
+        // you can assign to only any non-primitives, but you cannot
 
 //        null a = null - not allowed
 //        int num = null;
 
 
         String[] arr  = new String[4];
+        System.out.println("oo");
         System.out.println(arr[0]);
 
 
@@ -75,9 +79,9 @@ public class ArrayMain {
 
 /*
 internally stored
-        (stack)   arr ----------> (heap [r1,r2, r3,r4])
+        (stack)   arr ----------> (heap [r1,r2, r3,r4])  r1- arr[0] = null (by default) points to null so giving null in 70
                                | |    |  |
-                               2 3    5  6  ---- actual object somwhere store in heap
+                               2 3    5  6  ---- actual object somewhere store in heap
         */
 
 //        Scanner in = new Scanner(System.in);
@@ -89,14 +93,18 @@ internally stored
 //            arr[i] =
 //        }
 
+        int[] arr1 =  new int[5];
+        System.out.println(arr1[0]);
+
+
     }
 
 
 
     // pass by value | pass by references
-    // Java is always pasesed by value (incase of primitives and non-primitives)
-    // value of object refereces i.e address (stack) vs object data  (in heap)
-    // pass by value(but object references) - so mutablility is achieved
+    // Java is always passed by value (in case of primitives
+    // value of object references ie address (stack) vs object data  (in heap)
+    // pass by value(but object references) - so mutability is achieved
 
 }
 

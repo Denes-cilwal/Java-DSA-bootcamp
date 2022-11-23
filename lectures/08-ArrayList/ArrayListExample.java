@@ -10,9 +10,13 @@ public class ArrayListExample {
         // wrapper class
         // Integer | Float | String
         // ArrayList<String> list2 = new ArrayList<String>();
-
+        // wrapper class within <>
         ArrayList<Integer> list = new ArrayList<Integer>(3);
+        System.out.println("po");
+        System.out.println(list.size());
+        System.out.println(list.contains(80));
         /*
+
          * list.add(67);
          * list.add(68);
          * list.add(57);
@@ -29,7 +33,7 @@ public class ArrayListExample {
          * list.add(80);
          * list.set(0, 99);
          * 
-         * System.out.println(list.contains(654));
+//         * System.out.println(list.contains(654));
          * System.out.println(list);
          * 
          * list.remove(2); // remove 0 index
@@ -57,6 +61,8 @@ public class ArrayListExample {
          * 
          */
 
+        // size is fixed internally ,
+        // Let says
         System.out.println(list.size());
 
         // add elements
@@ -64,6 +70,7 @@ public class ArrayListExample {
         list.add(3);
         list.add(4);
         list.add(5);
+        System.out.println("sop");
         System.out.println(list);
         System.out.println(list.size());
 
@@ -71,10 +78,12 @@ public class ArrayListExample {
         System.out.println(list.get(1));
 
         // add el in between
-        list.add(1, 1);
+        list.add(1, 1); // shift to right --
         System.out.println(list);
+        System.out.println("sop1");
+        System.out.println(list.size());
 
-        // change element
+        // change element // update
         list.set(0, 5);
         System.out.println(list);
 
@@ -83,6 +92,7 @@ public class ArrayListExample {
         System.out.println(list);
 
         // arraylist size
+        System.out.println("opop");
         System.out.println(list.size());
 
         // loops over arraylist
@@ -95,5 +105,5 @@ public class ArrayListExample {
     // size is fixed internally
     // it will create new arraylist of say, double the size
     // old list are copied into new list
-    // old one is deleted
+    //
 }

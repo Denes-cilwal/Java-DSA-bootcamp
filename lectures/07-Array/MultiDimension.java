@@ -24,14 +24,22 @@ public class MultiDimension {
 //                {7,8,9, 2},    // 2nd index - arr[2] = {7,8,9,2}
 //
 //        };
+//        int[][] arr1 =  new int[3][3];
+//        for (int row = 0; row < arr1.length; row++){
+//
+//        }
+
         Scanner in = new Scanner(System.in);
         int[][] arr = new int[3][3];
         System.out.println(arr.length); // no of rows
+
         // take input in cells
         for (int row = 0; row < arr.length; row++) {
+            // in case-of row always count the row
             // for each col in every row
             for (int col = 0; col < arr[row].length; col++) {
-                arr[row][col] = in.nextInt();
+             // row ko index ko length ;
+               arr[row][col] =  in.nextInt(); // input
             }
         }
 
@@ -45,7 +53,7 @@ public class MultiDimension {
         }
 
         // 2D array from microsoft
-
+            // for every element in arr
         for (int[] a :
                 arr) {
             System.out.println(Arrays.toString(a));
