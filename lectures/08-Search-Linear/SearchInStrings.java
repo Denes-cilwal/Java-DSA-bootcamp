@@ -1,6 +1,6 @@
  public class SearchInStrings {
         public static void main(String[] args) {
-            String name = "Kunal";
+            String name = "Kuala";
             char target = 'u';
             System.out.println(search(name, target));
         }
@@ -14,6 +14,7 @@
             // first convert str to array
             for (char ch :
                     str.toCharArray()) {
+                // to loop over string we just convert into array - char Array created
                 if (ch == target) {
                     return true;
                 }

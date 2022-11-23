@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class SearchIn2DArray {
     public static void main(String[] args) {
         int[][] arr = {
@@ -8,6 +10,7 @@ public class SearchIn2DArray {
         };
         int target =34;
         int[] ans = search(arr, target); // format of return value{row,col};
+        System.out.println(Arrays.toString(ans));
         System.out.println(search(arr, target));
     }
     static int[] search(int[][] arr, int target){
@@ -15,7 +18,8 @@ public class SearchIn2DArray {
             for (int col = 0; col < arr[row].length ; col++) {
                 if (arr[row][col] == target){
                     // return single array
-                    return new int[]{row,col};
+                    // return {row,col} ; initialized but not declared so use new
+                    return new int[]{row, col};
                 }
             }
         }
