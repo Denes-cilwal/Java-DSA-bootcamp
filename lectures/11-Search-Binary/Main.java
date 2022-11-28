@@ -42,6 +42,8 @@ public class Main {
         search in linear for 1 million data - 1 million comparision
                 20 comparision -  binary search
 
+
+            K- log2(N) -no of levels you will be checking
          */
 
 int [] arr =  {-4, 2, 3,4,15, 16, 19,  22, 45,77,89,98,99,100};
@@ -56,9 +58,10 @@ int ans =  binarySearch(arr, target);
     static int binarySearch(int[] arr, int target){
        int start = 0;
        int end = arr.length -1;
+       // assume this array is in sorted order
        while (start <= end){
            // find middle element
-           // int mid =  start + end / 2; // the problem here is this may exceed end if this start and end is larger
+           // int mid =  start + end / 2; // might exceed the range of array integer in java
            // better way to find value
            int mid = start + (end-start) / 2;
            if (target < arr[mid]){
