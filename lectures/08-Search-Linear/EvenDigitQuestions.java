@@ -15,7 +15,7 @@ public class EvenDigitQuestions {
         System.out.println(digits(622222));
     }
 
- // Find the count
+ // Find the no of even count
     static int FindNumbers(int[] numArr){
         int count = 0;
         for (int num:
