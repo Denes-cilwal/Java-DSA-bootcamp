@@ -3,12 +3,21 @@ import java.util.Scanner;
 
 public class Sum {
     public static void main(String[] args) {
-        // condition :- 2 types must be compatible
-        // des type from be greater than src type
+//         condition :- 2 types must be compatible
+//         des type from be greater than src type
+
         Scanner input = new Scanner(System.in);
-        double num1 = input.nextFloat();
-        float num2 = input.nextInt();
-        double sum = num1 + num2;
+        int num1 = input.nextInt();
+        int num2 = input.nextInt();
+        int sum = num1 + num2;
         System.out.println("Sum = " + sum);
+
+
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("Please enter some input: ");
+//        int rollNo = input.nextInt();
+//        System.out.println("Your roll no is " +  rollNo);
     }
 }
+
+// Inputmismatchexception
