@@ -2,7 +2,7 @@ package com.dinesh;
 
 import java.util.Scanner;
 
-public class OddEven {
+public class OddEvenD {
     public static void main(String[] args) {
         // check if input number is odd or even
         // divide by 2 or multiple of 2

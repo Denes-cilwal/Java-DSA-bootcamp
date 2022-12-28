@@ -1,6 +1,6 @@
 package com.dinesh;
 
-public class countNumsND {
+public class countNumsD {
     public static void main(String[] args) {
 //        int n = 4553565;
 //        int count = 0;
@@ -11,11 +11,11 @@ public class countNumsND {
 //            }
 //            n = n / 10;
 //        }
-//        System.out.println("the count is :" + count);
 
         int n = 45556722;
         int count = 0;
         while(n > 0){
+
             int rem = n % 10; // gives remainder
             if (rem == 2){
 //                count =  count + 1;
@@ -24,6 +24,7 @@ public class countNumsND {
             }
             n = n / 10;  // gives dividend
         }
+        System.out.println("the count is :" + count);
 
     }
 }

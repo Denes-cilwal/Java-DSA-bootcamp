@@ -1,7 +1,7 @@
 package com.dinesh;
 
 
-public class reverseNumberND {
+public class reverseNumberD {
 
     // needLastDigit = num % 10;
     // removeLastDigit =  num/10;

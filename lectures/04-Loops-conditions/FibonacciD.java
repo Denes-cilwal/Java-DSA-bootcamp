@@ -2,7 +2,7 @@ package com.dinesh;
 
 import java.util.Scanner;
 
-public class Fibonacci {
+public class FibonacciD {
     public static void main(String[] args) {
         // Q. Find nth Fibonacci series
 

@@ -2,7 +2,7 @@ package com.dinesh;
 
 import java.util.Scanner;
 
-public class loops {
+public class loopsD {
     public static void main(String[] args) {
         /* Q : Print numbers from 1 to 6
         System.out.println(1);

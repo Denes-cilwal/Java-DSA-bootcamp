@@ -2,7 +2,7 @@ package com.dinesh;
 
 import java.util.Scanner;
 
-public class caseCheck {
+public class caseCheckD {
     public static void main(String[] args) {
 
         String word = "hello";

@@ -1,6 +1,6 @@
 package com.dinesh;
 
-public class ternaryOperator {
+public class ternaryOperatorD {
     // 3 operands
     // variable = condition ? statement1 : statement2
     public static void main(String[] args) {

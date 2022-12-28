@@ -2,7 +2,7 @@ package com.dinesh;
 
 import java.util.Scanner;
 
-public class CalculatorApp {
+public class CalculatorAppD {
     public static void main(String[] args) {
         // operations = + - * / %
         Scanner sc =  new Scanner(System.in);
