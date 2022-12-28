@@ -9,5 +9,9 @@ public class ternaryOperator {
         int marks = 54;
         String output = (marks > 33) ? "PASS":"FAIL";
         System.out.println(output);
+
+        int age = 17;
+        String result = (age > 18) ? "Is Eligible to vote":"Is not Eligible to vote";
+        System.out.println(result);
     }
 }

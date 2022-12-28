@@ -2,7 +2,7 @@ package com.dinesh;
 
 import java.util.Scanner;
 
-public class largest {
+public class largestD {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int a = in.nextInt();

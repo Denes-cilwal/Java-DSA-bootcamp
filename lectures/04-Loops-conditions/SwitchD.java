@@ -1,6 +1,6 @@
 package com.dinesh;
 
-public class Switch {
+public class SwitchND {
 
      // different button , different value
      public static void main(String[] args) {
