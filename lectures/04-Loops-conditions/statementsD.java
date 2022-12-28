@@ -1,6 +1,6 @@
 package com.dinesh;
 
-public class statements {
+public class statementsD {
     public static void main(String[] args) {
         /*
          * syntax of if statements
