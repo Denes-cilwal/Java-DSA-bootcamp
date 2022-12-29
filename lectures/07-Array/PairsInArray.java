@@ -8,19 +8,20 @@ public class PairsInArray {
         (8,10)
          */
         int[] arrNum = {2,4,6,8,10};
-        int result = printParis(arrNum);
-        System.out.println(result);
+        printParis(arrNum);
 
     }
-    static  int printParis(int[] num){
+    public static  void  printParis(int[] num){
+        int tp = 0;
         for(int i = 0; i < num.length; i++){
             int curr =  num[i];
                 for (int j = i+1 ; j<num.length; j ++){
                     System.out.print("(" + curr + "," + num[j] + ")");
+
                 }
+
             System.out.println();
         }
-        return 0;
     }
 
 }
