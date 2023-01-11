@@ -1,2 +1,2 @@
-public class SortedMatrix {
+public class SearchInSortedMatrix {
 }

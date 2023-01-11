@@ -10,7 +10,7 @@ public class Min_Max {
             return  -1 ;
         }
         int maxVal = arr[0];
-        for (int index = 0; index <arr.length ; index++) {
+        for (int index = 1; index <arr.length ; index++) {
             if (arr[index] > maxVal) {
                 maxVal = arr[index];
             }
@@ -29,7 +29,7 @@ public class Min_Max {
             return  -1 ;
         }
         int maxVal = arr[start];
-        for (int index = start; index <end ; index++) {
+        for (int index = start; index <=end ; index++) {
             if (arr[index] > maxVal) {
                 maxVal = arr[index];
             }

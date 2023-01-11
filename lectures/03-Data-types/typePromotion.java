@@ -2,11 +2,13 @@
 public class typePromotion {
 
     public static void main(String[] args) {
-        // Java automatically promotes each byte short or char operand to iny
+        // Java automatically promotes each byte short or char operand to int
         // when evaluating en expression.
         // if one operand is long, float or double the whole expression is promoted to
         // long,float or double respectively
 
+        char y4;
+      //  System.out.println(y4); // this is not problem in go takes default value
         char a = 'a';
         char b = 'b';
 
@@ -31,7 +33,7 @@ public class typePromotion {
         // wrong type promotions in Expressions
         byte n = 5;
         // type promotion with type casting
-       byte  m = (byte)(n * 2);
+       byte  m = (byte) (n * 2);
         System.out.println(m);
 
     }

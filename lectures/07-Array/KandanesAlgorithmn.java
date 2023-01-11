@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public class KandanesAlgorithmn {
+public class KandanesAlgorithmn {
+    // TM
 }

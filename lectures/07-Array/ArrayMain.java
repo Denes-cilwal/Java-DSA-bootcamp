@@ -19,6 +19,7 @@ public class ArrayMain {
         // stores 5 roll no
         // data type must be same
 
+
         int[] num = new int[5];
         // int[] - represent type of data stored in data structure
 //        or directly
@@ -39,7 +40,7 @@ public class ArrayMain {
                  ref variable
     */
 
-//        |3 | 8| 19| 12|7|28|33|  --  IN C ++, IS CONTINUOUS MEMORY ALLOCATION IN RAM CELL
+//        |3|8|19|12|7|28|33|  --  IN C ++, IS CONTINUOUS MEMORY ALLOCATION IN RAM CELL
 
         // IN JAVA THERE IS NO CONCEPT CALLED POINTERS
         // heap objects are not continuous
@@ -78,7 +79,7 @@ public class ArrayMain {
         // primitives are char, bool, num,float
 
 /*
-internally stored
+internally stored                       // reference variable
         (stack)   arr ----------> (heap [r1,r2, r3,r4])  r1- arr[0] = null (by default) points to null so giving null in 70
                                | |    |  |
                                2 3    5  6  ---- actual object somewhere store in heap

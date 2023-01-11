@@ -11,6 +11,8 @@
       <sourceFolder url="file://$MODULE_DIR$/08-ArrayList" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/08-Search-Linear" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/10-pattern-questions" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/11-Search-Binary" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/_13lectures" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

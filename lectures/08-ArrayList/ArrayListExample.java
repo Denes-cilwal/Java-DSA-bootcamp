@@ -11,6 +11,7 @@ public class ArrayListExample {
         // Integer | Float | String
         // ArrayList<String> list2 = new ArrayList<String>();
         // wrapper class within <>
+
         ArrayList<Integer> list = new ArrayList<Integer>(3);
         System.out.println("po");
         System.out.println(list.size());

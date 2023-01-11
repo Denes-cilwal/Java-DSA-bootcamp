@@ -8,5 +8,7 @@
     <mapping directory="$PROJECT_DIR$/12-LeetCodeSearch/leedcode" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/12-Search-Binary/untitled" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/13-Search-Binary/binary" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/15-Sorting/sorting" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/16-stringBuilder/src/strings" vcs="Git" />
   </component>
 </project>

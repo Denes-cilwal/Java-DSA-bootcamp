@@ -1,2 +1,3 @@
-public class MaxSubArraySum {
+public class MaxSubArraySumBruteForce {
+    // SN
 }

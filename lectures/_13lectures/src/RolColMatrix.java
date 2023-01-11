@@ -1,2 +1,2 @@
-package PACKAGE_NAME;public class RolColMatrix {
+public class RolColMatrix {
 }

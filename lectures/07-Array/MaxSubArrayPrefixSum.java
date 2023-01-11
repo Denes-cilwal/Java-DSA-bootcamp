@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public class MaxSubArrayPrefixSum {
+public class MaxSubArrayPrefixSum {
+    // TM
 }

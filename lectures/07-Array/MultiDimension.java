@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -30,10 +29,13 @@ public class MultiDimension {
 //        }
 
         Scanner in = new Scanner(System.in);
+//        int[][] arr = new int[3][3];
         int[][] arr = new int[3][3];
-        System.out.println(arr.length); // no of rows
+        System.out.println(arr.length); // no of rows is mandatory
 
-        // take input in cells
+
+        // ta
+        // ke input in cells
         for (int row = 0; row < arr.length; row++) {
             // in case-of row always count the row
             // for each col in every row

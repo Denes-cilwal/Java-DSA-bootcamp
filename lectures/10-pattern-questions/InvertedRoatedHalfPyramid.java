@@ -1,2 +1,3 @@
-public class InvertedRoatedHalfPyramid {
+public class
+InvertedRoatedHalfPyramid {
 }

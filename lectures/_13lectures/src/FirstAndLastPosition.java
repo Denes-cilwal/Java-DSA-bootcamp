@@ -18,7 +18,6 @@ public class FirstAndLastPosition {
         return ans;
     }
 
-    // this function just returns the index value of target
 
     // this function just returns the index value of target
     static int search(int[] nums, int target, boolean findStartIndex) {
@@ -37,6 +36,7 @@ public class FirstAndLastPosition {
             } else {
                 // potential ans found
                 ans = mid;
+                // if ans is the mid then might be possible that there are other  element in left apply binary search
                 if (findStartIndex) {
                     end = mid - 1;
                 } else {
@@ -48,3 +48,4 @@ public class FirstAndLastPosition {
     }
 }
 
+// log(N) + log(N) --  time complexity - 2log(N) - constant is ignored here ---

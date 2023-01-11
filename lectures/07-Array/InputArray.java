@@ -4,7 +4,14 @@ import java.util.Scanner;
 public class InputArray {
 
     public static void main(String[] args) {
+
+
+
         Scanner in  =new Scanner(System.in);
+        int num = in.nextInt();
+
+
+
 //        int[] arr = new int[5];
 //
 //        // input using for loops

@@ -8,6 +8,8 @@ public class typeCasting {
         int num = input.nextInt();
         System.out.println((num));
 
+//       ---- case - |  ----
+        // type must be comptable
         // destination must be greater than int
         // condition : = ask for float but give int works but vice versa case do not
         // work
@@ -21,6 +23,13 @@ public class typeCasting {
         // float(can add int and float) > int(only int) - type conversion is not
         // possible
 
+
+
+//        float num1  =  input.nextInt(); // this works
+//        int num1 = input.nextFloat()// donot works
+
+
+
         /*
          * int num1 = input.nextInt();
          * System.out.println(num1);
@@ -29,8 +38,8 @@ public class typeCasting {
         // int num1 = input.nextFloat(); // gives error because num1 int type < float
         // type
 
-        // type casting : explicit type conversion
-        // type casting : explicit type conversion
+        // type casting : explicit type conversion : narrowing conversion
+        // type casting : explicit type conversion : narrowing conversion
         // narrow to int
         int newNumber = (int) (67.90f);
         System.out.println(newNumber);
@@ -61,5 +70,11 @@ public class typeCasting {
         System.out.println(3 * 6);
         System.out.println(3 * 6.0);
 
+
+        double bc = 3.5;
+        // explict type conversion
+        int k =(int) bc + 8 ;
+
+        // unicode -- Java supports
     }
 }

@@ -1,4 +1,4 @@
-public class Main {
+public class main {
     public static void main(String[] args) {
         /*
         // binary search - optimized way to search
@@ -75,4 +75,13 @@ int ans =  binarySearch(arr, target);
         // return -1 if not exist
        return  -1 ;
     }
-}''
+}
+
+
+
+//
+//arr =  {1,12,18,23,28,97,100,122,144} - target 122 - 8 loops -- O(n) ---> 8
+//arr1 ={1,12,18,23,28,97,100,122,144} --- log(N)
+//
+//
+//N1 ----> N/2-----> N/2/2----> N/8------>
