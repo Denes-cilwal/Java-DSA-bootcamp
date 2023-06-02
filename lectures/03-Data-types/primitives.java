@@ -29,6 +29,7 @@ public class primitives {
         // type casting | conversion
         // with type compatible
         int num = (int)(67.89f);
+
         System.out.println(num);
     }
 }

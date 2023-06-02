@@ -4,7 +4,7 @@ public class MethodsMain {
         func();
     }
 
-    // returnType name(){}
+    // returnType name_of_function(){}
     static void func(){
 
     }

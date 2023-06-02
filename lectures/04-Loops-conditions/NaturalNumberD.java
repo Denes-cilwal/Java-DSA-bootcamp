@@ -2,7 +2,8 @@ package com.dinesh;
 
 import java.util.Scanner;
 
-public class NaturalNumberD {
+public class
+NaturalNumberD {
     public static void main(String[] args) {
         // Number > 0 are natural numbers, excluding decimal fraction
         Scanner input = new Scanner(System.in);

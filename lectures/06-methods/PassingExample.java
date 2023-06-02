@@ -1,12 +1,13 @@
 public class PassingExample {
     public static void main(String[] args) {
         String newName = "Lionel Messi";
+        // copy of value of referenced variable is passed in new Name
         greet1(newName);
         System.out.println(newName);
     }
 
 //    static void greet(String name) {
-//        // Java is always passed by value not by pass by referenced
+//        // Java is always passed by referenced value  not by pass by referenced
 //        System.out.println(name);
 //    }
 
@@ -24,7 +25,7 @@ public class PassingExample {
     stack                  Heap
     newName ------>   Lionel Messi()
     // when newName is passed the copy of value of reference variable is passed
-    // copy of reference variable is passed
+    // copy of value of reference variable is passed
     // both reference variable pointing to same object
     newName -----------
                        |  -----"Lionel Messi"
@@ -32,7 +33,7 @@ public class PassingExample {
     name---------------
 
     // creating newObjectReferencesVar
-    - not changing object but creating new object
+    - not changing object but creating new object(creating new value)
     newName ------- "Lionel Messi"(no change in original scope)
 
     name ---------- "david"(only change in its scope)

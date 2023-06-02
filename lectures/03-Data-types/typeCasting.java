@@ -7,6 +7,9 @@ public class typeCasting {
         Scanner input = new Scanner(System.in);
         int num = input.nextInt();
         System.out.println((num));
+        Scanner input1 = new Scanner(System.in);
+        int num1 = input.nextInt();
+        System.out.println((num1));
 
 //       ---- case - |  ----
         // type must be comptable
@@ -26,7 +29,7 @@ public class typeCasting {
 
 
 //        float num1  =  input.nextInt(); // this works
-//        int num1 = input.nextFloat()// donot works
+//        int num1 = input.nextFloat()// do not works
 
 
 
@@ -72,7 +75,8 @@ public class typeCasting {
 
 
         double bc = 3.5;
-        // explict type conversion
+        // explicit type conversion
+
         int k =(int) bc + 8 ;
 
         // unicode -- Java supports

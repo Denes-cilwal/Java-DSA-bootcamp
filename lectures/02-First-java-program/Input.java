@@ -8,10 +8,14 @@ public class Input {
         // value that we passed in where from input is taken
         // Scanner(System.in) // constructor initialization
         // System.in is default stream input
+        // pass primitive types in Scanner
+        // Scanner takes from where you are taking input
+
         Scanner input =  new Scanner(System.in);
 
         // modify out
         // next Integer
+        // out is
        System.out.println(input.nextInt());
 
        // next string

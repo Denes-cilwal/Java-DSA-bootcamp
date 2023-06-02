@@ -1,7 +1,7 @@
 public class SwapPrimitives {
 
     // pass by value vs pass by reference
-    // java always call by value
+    // java always call by value reference
     public static void main(String[] args) {
         int a  =10;
         int b = 20;
@@ -27,6 +27,13 @@ public class SwapPrimitives {
 
         System.out.println("a =" + a);
         System.out.println("b =" + b);
+    }
+
+    static  void  swa1p(int a , int b){
+            int temp = a;
+            a = b;
+            b = temp;
+
     }
 
 

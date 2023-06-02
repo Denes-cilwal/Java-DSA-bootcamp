@@ -12,7 +12,7 @@ public class MainMethods {
     }
 
     // return the value
-    static  int sum2() {
+   public static  int sum2() {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter a number 1: ");
         int num1 = in.nextInt();
@@ -25,7 +25,7 @@ public class MainMethods {
     }
 
     // do not return the value
-    static  void sum() {
+    public static  void sum() {
         Scanner in = new Scanner(System.in);
         int num1 = in.nextInt();
         System.out.println("Enter a number 1: ");
@@ -33,6 +33,13 @@ public class MainMethods {
 
         int sum = num1 + num2;
         System.out.println("The sum = "+ sum);
+    }
+
+    public static void  main(){
+        Scanner in = new Scanner(System.in);
+        int num1 =  in.nextInt();
+
+
     }
 }
 

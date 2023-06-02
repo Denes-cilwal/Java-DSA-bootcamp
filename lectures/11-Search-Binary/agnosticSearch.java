@@ -1,9 +1,9 @@
 public class agnosticSearch {
     public static void main(String[] args) {
 
-        System.out.println("order-agonistic search");
+        System.out.println("order-agnostic search");
         // if s > f ==> increasing order sorted
-        // s < f ==> decresing order sorting
+        // s < f ==> decreasing order sorting
         int [] arr =  {-4, 2, 3,4,15, 16, 19,  22, 45,77,89,98,99,100};
         int target =  77;
         int ans =  orderAgnosticSearch(arr, target);

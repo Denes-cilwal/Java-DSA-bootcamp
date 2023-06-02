@@ -6,15 +6,14 @@ public class Shadowing {
     // accessing same variable under same scope on overlap conditions
 
     public static void main(String[] args) {
-        System.out.println(x);
+        System.out.println(x); // 80
         int x = 40;
         // scope changes shadowing concept
         //int x ; //   // scope will begins when value is only initialized, declaring does not work
 
-        System.out.println(x);
+        System.out.println(x); // 40
         func();
     }
-
     static void func(){
         System.out.println(x);
     }

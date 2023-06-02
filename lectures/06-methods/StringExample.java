@@ -10,6 +10,9 @@ public class StringExample {
         String personalized = myGreet(naam);
         System.out.println(personalized);
         sum3(1,2);
+
+       String na = greet1();
+       System.out.println(na);
     }
     static String myGreet(String name) {
 
@@ -24,6 +27,10 @@ public class StringExample {
 
             int sum =  a + b;
             return  sum;
+    }
+
+    static String greet1(){
+        return  "Hello";
     }
 
 

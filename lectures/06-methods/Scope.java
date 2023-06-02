@@ -10,6 +10,7 @@ public class Scope {
 
         {
             int s = 45;
+             b= 20; // reassign the origin ref variable new value.
             System.out.println(a);
         }
 //        System.out.println(s); //not allowed
@@ -18,7 +19,7 @@ public class Scope {
          int c = 23;
             System.out.println(c);
 //        }
-        System.out.println(c); // cannot be acess outside the block
+        System.out.println(c); // cannot be access outside the block
 
         a = 90; // can be modified
 
