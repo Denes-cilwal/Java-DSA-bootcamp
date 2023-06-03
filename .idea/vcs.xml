@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="VcsDirectoryMappings">
-    <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/lectures/12-LeetCodeSearch/leedcode" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/lectures/15-Sorting/sorting" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/lectures/16-stringBuilder/src/strings" vcs="Git" />
-  </component>
-</project>
