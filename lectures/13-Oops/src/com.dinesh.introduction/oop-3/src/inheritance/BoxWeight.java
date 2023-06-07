@@ -39,4 +39,20 @@ public class BoxWeight extends Box{
  single inheritance
  multi-level inheritance
  multiple inheritance - class extending more than one class
+
+ a (n=2)             B(n=10)
+ |                   |
+  -------   c -------
+  c.n // ? ie. not possible
+
+  but if i want to access these types of use cases it then how can I do it ? using interfaces
+
+  hierarchical interface
+
+           A
+|          |          |
+B          c          D
+
+hybrid inheritance - combination of single and multiple - since no multiple in java so no hybrid inheritance - check interface lecture.
+
  */
