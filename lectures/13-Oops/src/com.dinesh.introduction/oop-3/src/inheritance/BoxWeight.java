@@ -25,4 +25,18 @@ public class BoxWeight extends Box{
     }
 
 
+  BoxWeight(BoxWeight other){
+        super(other);
+        this.weight = other.weight;
+  }
+
+    BoxWeight(double side, double weight) {
+        super(side);
+        this.weight = weight;
+    }
 }
+/*
+ single inheritance
+ multi-level inheritance
+ multiple inheritance - class extending more than one class
+ */
