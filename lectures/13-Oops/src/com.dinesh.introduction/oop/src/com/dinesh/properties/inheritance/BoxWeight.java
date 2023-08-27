@@ -23,6 +23,12 @@ public class BoxWeight extends Box{
 
     }
 
+    // @Override
+    // never been called , cannot override them even though you can inherit
+    static void  greeting(){
+        System.out.println("Hey I am in box class,Greeting!");
+    }
+
     public BoxWeight(double l, double h, double w, double weight) {
         super(l, h, w); // what is this ? call the parent class constructor
         // used to initialize value present in parent class,

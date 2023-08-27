@@ -36,9 +36,7 @@ public class DynamicMethodDispatch {
         The type of the actual object (whether it's an instance of the superclass or subclass) determines which version of the method is called.
         Simple Example:
         Imagine a scenario:
-
-
-     Even though myDog is a reference of type Animal, the actual object it points to is a Dog. So, when you call myDog.sound(),
+      Even though myDog is a reference of type Animal, the actual object it points to is a Dog. So, when you call myDog.sound(),
      Java looks at the actual object (which is Dog) and calls the Dog class's sound method.
      The same goes for myCat.
      This decision of which method to call (Animal's sound method or Dog's sound method or Cat's sound method) is made at runtime, based on the actual object.
@@ -55,11 +53,9 @@ Runtime Resolution Process:
 Object Creation: When you create an object, say of type Dog (from our previous example), the JVM allocates memory for that object. This memory contains an implicit reference (or pointer) to the method table of its class.
 
 Method Invocation: When you try to invoke a method using a reference (e.g., myDog.sound()), the JVM looks at the type of the actual object that myDog is pointing to. Remember, myDog might be an Animal reference, but it's pointing to a Dog object.
-
 Looking Up the vTable: The JVM accesses the vTable for the Dog class (because myDog is pointing to a Dog object). It then finds the address for the sound method and executes the method from there.
 
 Because this resolution process happens when your program runs (not when it's compiled), it's called runtime polymorphism.
-
 Key Point:
 The JVM doesn't need to figure out which method to call by scanning through your classes during runtime. Instead, it simply follows the pointers in the vTable, which already have the information about which method addresses to go to. This makes the method resolution process at runtime efficient.
  */

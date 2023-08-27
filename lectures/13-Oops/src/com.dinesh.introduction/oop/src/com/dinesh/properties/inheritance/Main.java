@@ -45,6 +45,7 @@ public class Main {
 
         // multilevel inheritance
         BoxPrice box = new BoxPrice(5, 6, 200);
+        box.getAge(); // abstraction
 
     }
 }
