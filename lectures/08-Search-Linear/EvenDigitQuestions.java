@@ -1,4 +1,5 @@
-public class EvenDigitQuestions {
+public class
+EvenDigitQuestions {
     // Given an array nums of integers, return how many of them contain an even number of digits.
     /*
     12 contains 2 digits (even number of digits).

@@ -15,6 +15,7 @@
      size
  */
 public class SearchMain {
+    // done
     public static void main(String[] args) {
         int[] num = {12,3,4,15,6,8,9,10,14,15};
         int target = 15;
@@ -55,6 +56,7 @@ public class SearchMain {
         }
 
         // run a loop and return index
+        // if no use of index you enhanced loop
         // Case - I
         for (int element:
                 arr) {
@@ -70,6 +72,9 @@ public class SearchMain {
     // Search in the array: return the index if item found
     // otherwise if item not found return -1
     static int linearSearch(int[] arr, int target ){
+
+        // why returning -1 here and not returning in up case
+        // -1 will never be indexing and -1 can be value in the array  so return Integer.MAX_VALUE;
 
         if (arr.length == 0){
             return -1;
