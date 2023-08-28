@@ -2,10 +2,11 @@ package oop.src.com.dinesh.singleton;
 
 import oop.src.com.dinesh.accessControl.A;
 
-public class SubClass extends A {
+public class SubClass extends A{
 
     public SubClass(int num, String name, int marks) {
         super(num, name, marks);
+        Object Object; // how you are able to use this since java does not allow multiple inheritance public class SubClass extends A , Object => it is doing internally
     }
 
     public static void main(String[] args) {

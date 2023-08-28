@@ -1,0 +1,11 @@
+
+Java folder
+    sub folders - inbuilt - lang package (java language specific package , basic stuffs like operator from lang package) // automatically imported
+    sub folders - input output classes (java.io)
+    sub folders - utils - data structure and collection frameworks -  java.utils package
+    sub folders - applet - servlets (no need to learn until you find job)
+    sub folders -  awt (button no need to learn until you find job)
+    sub folder - net(network)
+
+
+    class object is the root of the top hierarchy
