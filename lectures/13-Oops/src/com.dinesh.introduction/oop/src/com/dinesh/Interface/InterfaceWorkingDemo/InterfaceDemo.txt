@@ -1,0 +1,51 @@
+
+/*
+When you run a Java program, you're executing the concrete implementations of the methods, not the interfaces themselves.
+The interface is a contract or a guarantee that the class will have certain methods. When you interact with an object via its interface type, you're effectively saying,
+"I don't care about the specifics of this object, only that it adheres to this contract."
+For example, consider an interface PaymentMethod with a method processPayment.
+Different classes like CreditCard, PayPal, etc., might implement this interface.
+When you use this interface in your code, you don't need to know the specific payment method being used,
+only that it can process a payment.
+
+
+
+public interface PaymentMethod {
+    void processPayment(double amount);
+}
+
+public class CreditCard implements PaymentMethod {
+    @Override
+    public void processPayment(double amount) {
+        // logic to process payment via credit card
+    }
+}
+
+public class PayPal implements PaymentMethod {
+    @Override
+    public void processPayment(double amount) {
+        // logic to process payment via PayPal
+    }
+}
+
+public class Store {
+    public void checkout(PaymentMethod method, double amount) {
+        method.processPayment(amount);
+    }
+}
+
+public static void main(String[] args) {
+    Store store = new Store();
+    PaymentMethod payment = new PayPal();
+    store.checkout(payment, 100.0);
+    // Here, you don't need to know the specifics of PayPal.
+    Only that it's a PaymentMethod.
+}
+In this example,
+the Store class only needs to know that it can process a payment using something that adheres to the PaymentMethod interface.
+It doesn't need to know if it's PayPal, CreditCard, or any other payment method.
+The interface abstracts away the specifics.
+
+ if an interface dictates that a certain method must exist, any class that claims to adhere to (or implement)
+ that interface must provide a concrete implementation of that method.
+ */

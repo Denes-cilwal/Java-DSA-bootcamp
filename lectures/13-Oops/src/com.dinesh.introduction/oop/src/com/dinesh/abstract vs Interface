@@ -1,0 +1,28 @@
+Abstract Class:
+When to use it: You should use an abstract class when you want to provide a common base class that contains common attributes or methods and might have default implementations, but you don't want it to be instantiated on its own.
+
+Key features:
+
+Can have both abstract (no body) and concrete (with body) methods.
+Can have member variables (fields).
+Supports constructors.
+Supports access modifiers (public, protected, etc.).
+Allows the declaration of fields.
+A single class can extend only one abstract class (no multiple inheritance).
+Real-life scenario: Consider different types of bank accounts: SavingsAccount, CheckingAccount, etc. All accounts might have common properties like accountNumber, balance, and methods like deposit(), withdraw(). Some methods can have default implementations, while others might be abstract (e.g., calculateInterest()), as the way interest is calculated might differ for each type of account.
+
+Interface:
+When to use it: Use an interface when you want to define a contract of methods that multiple classes must implement, but you're not concerned about providing any default implementation for them.
+
+Key features:
+
+Only has abstract methods (until Java 8 introduced default and static methods in interfaces).
+Cannot have member variables (fields, except for static final constants).
+Does not support constructors.
+All methods are implicitly public.
+A single class can implement multiple interfaces (a way to achieve multiple inheritance in Java).
+Real-life scenario: Consider behaviors like Flyable, Swimable. Different entities like Birds (Eagle, Sparrow) or Aircraft might fly, while Fish or Boats might swim. The behavior (methods) of flying or swimming would be in interfaces. These entities would implement the appropriate interfaces, indicating they can perform those actions. So, Eagle might implement both Flyable and Swimable, but Aircraft would only implement Flyable.
+
+General Guideline:
+Use an interface when you want to represent a capability or behavior that can span across different unrelated class hierarchies.
+Use an abstract class when you have a clear hierarchical relationship and want to share common state (fields) or behavior (methods) among those related classes.
