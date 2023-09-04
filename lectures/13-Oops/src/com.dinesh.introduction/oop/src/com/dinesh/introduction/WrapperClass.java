@@ -10,12 +10,14 @@ public class WrapperClass {
 
 
         // STILL NOT SWAPPED, although it is Class pass by object
-        // this is due to final
+        // this is due to final, is constant cannot be changed
         Integer x = 20;
         Integer y = 30;
         swap1(x , y);
-        System.out.println(x );
-        System.out.println(y );
+        System.out.println(x);
+        System.out.println(y);
+
+
 
 
         final  int bonus = 3; // always initialize when declaring it
@@ -26,7 +28,10 @@ public class WrapperClass {
 
         // when a non primitive is final , you cannot re-assign it
        //  dipesh = new A("new object"); // Cannot assign a value to final variable 'dipesh'
-
+/*
+When you declare a reference variable (e.g., an object or an array) as final,
+the reference itself cannot be modified, meaning you can't make it point to a different object.
+ */
 
         A obj;
         for (int i = 0; i < 1000000000; i++) {

@@ -1,0 +1,54 @@
+
+
+
+    // multiple inheritance is not supported in java
+    /*
+    A
+   / \
+  B   C
+   \ /
+    D (ambiguity)
+    In Java, multiple inheritance is not supported for classes due to the potential for the "Diamond Problem" and complexity it introduces.
+    However, Java provides a way to achieve a form of multiple inheritance using interfaces.
+    The Diamond Problem:
+    The "Diamond Problem" arises in languages that support multiple inheritance of classes. Imagine this scenario:
+
+    Class A has a method named doSomething().
+    Class B and Class C both inherit from Class A.
+    Class D inherits from both Class B and Class C.
+    Now, if Class B and Class C override the method doSomething() and Class D calls doSomething(), it would be ambiguous as to which version of the method should be called.
+    To avoid such complexities, Java doesn't allow multiple inheritance of classes.
+    */
+
+    /*
+    Using Interfaces(not class) for Multiple Inheritance:
+    In Java, while you can't inherit from multiple classes, you can implement multiple interfaces. This allows you to achieve a form of multiple inheritance without the issues of the diamond problem.
+    */
+
+    /*
+    Interface vs abstract method -
+     Interfaces(is not a class) basically contains only abstract function (methods) only method definition
+     but abstract class can have abstract method as well no abstract method(concrete implementation)
+
+     Interface says what the class is doing not how it is doing
+     the variable declared in the Interface are by default final
+     // why final by default if you create variable in an interface, interface cannot have constructor then how can you initialize  that , that's why they are final because final variable always need to initialized
+
+     // and in the abstract it contain final or non-final
+      // object cannot be created of Interface as contains abstract method (we cannot create)
+
+     //  abstract class provide implementation of interface but interface cannot provide implementation of abstract class
+     //  we use extends keyword in abstract class and in interface we use implements keyword
+
+
+     // members of java interface are public by default and abstract class have all kinds private protected ...
+      // class can implement more than one interface(multi interface) but in other hand class can only inherit single class
+
+     */
+
+
+    /*
+        for every car Braka(brake()), Engine(start(), stop(), acc()), Media (start(), stop()) their properties is same but functionality is different
+
+     */
+

@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Main {
     public static  void  main(String []args) {
 
-    /*
+    /* done
      store 5 roll no
     int[] numbers = new int[5];
     // store 5 names
@@ -172,7 +172,7 @@ class Student {
         // but what this is referring it refers to ref variable student1
         // this.rno means internally    => student.rno means internally taking place
         /*
-        he primary purpose of a constructor is to initialize the newly created object. This can involve setting up initial conditions,
+        The primary purpose of a constructor is to initialize the newly created object. This can involve setting up initial conditions,
          allocating resources, or simply assigning default or initial values to the object's fields.
          */
         this.name = "tech";
@@ -187,8 +187,10 @@ class Student {
         this.marks =  marks;
     }
 
+    // constructor overloading - compile time [what to do call upper one or lower one is decided at run time dynamic dispatch]
 
      Student(Student student2) {
+        // returns values by default [] not have to define like other functions
          this.rno =  student2.rno;
          this.name = student2.name;
          this.marks =  student2.marks;

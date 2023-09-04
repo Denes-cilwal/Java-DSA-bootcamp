@@ -1,4 +1,4 @@
-done -> In Java, an instance variable is a variable that is declared inside a class but outside any method,
+In Java, an instance variable is a variable that is declared inside a class but outside any method,
 constructor, or block. It belongs to an object of the class and is created when an object of the class is instantiated.
 Each object of the class has its own separate copy of the instance variable,
 which is why it's called an "instance" variable.
