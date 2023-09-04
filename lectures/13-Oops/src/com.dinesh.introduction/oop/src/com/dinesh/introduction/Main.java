@@ -11,6 +11,10 @@ public class Main {
     // store 5 names
     String[] names = new String[5];
 
+  int[] numbers =  new int[5];
+
+
+
      */
 
     /*
@@ -139,6 +143,8 @@ public class Main {
 }
 
 // create a class for every single student
+
+
 class Student {
     int rno;
     String name;
@@ -165,6 +171,10 @@ class Student {
         // we need one word to access every object
         // but what this is referring it refers to ref variable student1
         // this.rno means internally    => student.rno means internally taking place
+        /*
+        he primary purpose of a constructor is to initialize the newly created object. This can involve setting up initial conditions,
+         allocating resources, or simply assigning default or initial values to the object's fields.
+         */
         this.name = "tech";
         this.rno = 2;
         this.marks =  98;

@@ -1,0 +1,79 @@
+Primitive data types in Java (e.g., int, char, float, double, byte, short, long, boolean)
+are typically stored on the stack when they are local variables or method parameters.
+However, they can be stored in the heap in certain circumstances:
+
+********As part of an Object: ***********
+When a primitive type is an instance variable (attribute) of an object, it resides in the heap as part of that object's memory layout.
+For example:
+public class MyClass {
+    int x;  // This 'int' is stored in the heap as part of a MyClass object
+}
+
+When you create an instance of MyClass, the int x will be stored in the heap because it's part of the MyClass object.
+
+******Arrays: ************
+Arrays in Java are objects, regardless of what they hold. So, an array of primitives will be stored in the heap:
+int[] myArray = new int[10];  // This array is an object stored in the heap
+
+To summarize: While primitive data types as local variables/method parameters are typically stored on the stack, they can be stored in the heap if they are part of an object or an array.
+
+
+
+
+
+
+public void myMethod() {
+    int localPrimitive = 5; // Local primitive variable
+    MyClass obj = new MyClass(); // Object with an int attribute
+    int[] array = new int[5]; // Array of primitives
+}
+Upon Invocation of myMethod:
+A new frame is created on the stack for the method's execution context:
+sql
+Copy code
+Stack:              Heap:
++-------------------+
+| myMethod frame    |
+|-------------------|
+|                   |
++-------------------+
+
+(empty)
+Declaring the Local Primitive Variable:
+The local primitive variable localPrimitive is stored on the stack:
+sql
+Copy code
+Stack:              Heap:
++-------------------+
+| myMethod frame    |
+|-------------------|
+| localPrimitive: 5 |
++-------------------+
+
+(empty)
+Creating an Object:
+When the MyClass object is instantiated, it is stored in the heap. The obj reference in the stack points to this object. Assume that MyClass has an int attribute called x.
+
+Stack:              Heap:
++-------------------+  +-------------------+
+| myMethod frame    |  | MyClass object    |
+|-------------------|  |-------------------|
+| localPrimitive: 5 |  | x: 0 (default)    |
+| obj: [ref]--------|--|>                  |
++-------------------+  +-------------------+
+
+Creating an Array of Primitives:
+Arrays in Java are objects. When an array of integers is created, it's stored in the heap. The array reference in the stack points to this array.
+sql
+Copy code
+Stack:              Heap:
++-------------------+  +-------------------+  +-------------------+
+| myMethod frame    |  | MyClass object    |  | int array object  |
+|-------------------|  |-------------------|  |-------------------|
+| localPrimitive: 5 |  | x: 0 (default)    |  | [0,0,0,0,0]       |
+| obj: [ref]--------|--|>                  |  |                   |
+| array: [ref]------|--|>                  |  +-------------------+
++-------------------+  +-------------------+
+Once the myMethod finishes execution, its frame is removed from the stack, and the local variables are discarded.
+If there are no other references to the MyClass object and the integer array, they become eligible for garbage collection.
+

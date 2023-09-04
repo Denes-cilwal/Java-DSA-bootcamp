@@ -1,0 +1,151 @@
+************Concept of memory allocation when creating a new object in Java using the new keyword.*************
+
+1. objects reside in a section of memory called the heap
+2. The heap is part of RAM(Random Access Memory)  dedicated to dynamic memory allocation, where variable are allocated and deallocated at run time
+
+
+When you use new keyword, Java performs the following steps
+
+1.Memory Allocation: Java first finds a block of memory in the heap that's large enough to fit the object you're creating.
+This space will be used to store the object's instance variables and metadata.
+At this point, the object's instance variables are typically given their default values (e.g., 0 for int, null for object references, false for boolean, etc.).
+
+
+2. Constructor Execution: Once the memory has been allocated, the constructor of the class is executed.
+This is where you typically override those default values and set up any other necessary initialization.
+
+3. Reference Assignment:
+   After the constructor finishes execution, the memory address of the newly created and initialized object is returned and can be assigned to a reference variable.
+
+  For example, when you write:
+
+
+  Person person = new Person();
+  The new keyword tells Java to allocate memory on the heap for a Person object.
+  The Person() constructor is then called to initialize the object.
+  Finally, a reference to that memory location (where the Person object resides) is assigned to the variable person.
+  This memory management and the use of the heap are essential aspects of Java's architecture.
+  One of the advantages of Java is its automatic garbage collection. When objects are no longer referenced or used, the Java Garbage Collector can reclaim that memory from the heap,
+  preventing memory leaks that are common in languages where developers must manage memory manually.
+
+
+
+
+// this is physical existence of logical class
+
+  Person person = new Person();
+  Memory Allocation:
+  Heap Memory:
+  +---------------------+
+  |   ...               |
+  |---------------------|
+  |                     |
+  |    Person Object    |
+  |    - name: null     |
+  |    - age: 0         |
+  |                     |
+  |---------------------|
+  |   ...               |
+  +---------------------+
+  At this stage, memory is reserved in the heap for the Person object.
+  The attributes of the Person class, name and age, are given their default values (null for name as it's a String (an object) and 0 for age as it's an int).
+
+  Constructor Execution:
+  Let's assume the constructor Person() sets the name as "Unknown" and age as 25. After execution:
+  Heap Memory:
+  +---------------------+
+  |   ...               |
+  |---------------------|
+  |                     |
+  |    Person Object    |
+  |    - name: Unknown  |
+  |    - age: 25        |
+  |                     |
+  |---------------------|
+  |   ...               |
+  +---------------------+
+
+  Reference Creation:
+  The address/reference to the Person object in memory is then assigned to the variable person.
+  diff
+  Copy code
+  Stack Memory:
+  +---------------------+
+  |                     |
+  |   person: address   |
+  |   (of Person obj)   |
+  |                     |
+  +---------------------+
+  Now, the variable person holds the address of the memory location
+  where the Person object is stored. When we want to access the object, we use this reference.
+
+  This is a simplified representation, and in reality,
+  Java's memory management and object instantiation involve more intricate details and processes,
+  especially when considering aspects like garbage collection, object metadata, etc.
+
+
+
+
+
+public void createPerson() {
+    Person person = new Person();
+    // ... some code ...
+}
+When the createPerson method is called, a frame is created on the stack for it.
+Inside the method, a new Person object is created, so memory is allocated on the heap for the Person object.
+The reference person (local variable) is stored on the stack in the createPerson frame.
+Once the createPerson method completes execution, its frame is removed from the stack, and the person reference is discarded.
+If there are no other references to the Person object, it becomes unreachable and is eligible for garbage collection.
+At some point in the future, the garbage collector may run and clean up the Person object from the heap.
+When the entire program ends, all memory (stack and heap) is released.
+Note: While the Java garbage collector automates memory management to a great extent, it's essential to be aware of object references to avoid memory leaks. If objects remain referenced (even unintentionally), they won't be garbage collected, which might lead to unwanted memory consumption over time.
+
+
+Method Invocation:
+When the createPerson method is invoked, a stack frame is created for it.
+Stack:          Heap:
++-------------------+
+| createPerson frame |  <-- Top of the stack
++-------------------+
+Object Creation:
+Within the createPerson method, you create a new Person object using the new keyword. The object is allocated space in the heap, and a reference to that object is stored in the person variable within the stack frame.
+
+
+Stack:          Heap:
++-------------------+  +-------------------+
+| person:   [ref]---|--|> Person object     |
+| createPerson frame |  +-------------------+
++-------------------+
+In the above representation, [ref] is a reference to the Person object. The arrow --|>| visually represents the reference pointing to the object in the heap.
+
+End of Method Execution:
+When the createPerson method finishes execution, its stack frame is popped off the stack, and the reference to the Person object is discarded. The object becomes unreachable.
+sql
+Copy code
+Stack:          Heap:
+(empty)         +-------------------+
+                |  Person object     |
+                +-------------------+
+
+Garbage Collection:
+The Person object in the heap becomes eligible for garbage collection since there are no references pointing to it.
+sql
+Copy code
+Stack:          Heap:
+(empty)         +-------------------+
+                |  GC eligible       |
+                +-------------------+
+Note: Even though the object is eligible for garbage collection, it might not be immediately collected. The actual collection will depend on several factors related to the garbage collector's operation.
+
+Post Garbage Collection:
+When the garbage collector runs and reclaims the memory of the now-unreachable Person object:
+
+Stack:          Heap:
+(empty)         (empty)
+Program Termination:
+When the entire program (JVM) terminates, both the stack and heap memory are cleared.
+Remember, this is a very simplified representation. The real workings of the JVM, memory allocation, and garbage collection are more complex. However, this should give you a visual understanding of how memory is managed in terms of the stack and heap during object creation and lifecycle.
+
+
+
+

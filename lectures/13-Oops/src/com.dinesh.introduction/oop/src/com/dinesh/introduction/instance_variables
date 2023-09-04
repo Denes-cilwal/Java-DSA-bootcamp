@@ -1,0 +1,70 @@
+In Java, an instance variable is a variable that is declared inside a class but outside any method,
+constructor, or block. It belongs to an object of the class and is created when an object of the class is instantiated.
+Each object of the class has its own separate copy of the instance variable,
+which is why it's called an "instance" variable.
+
+Here's a breakdown:
+
+Lifetime:
+Instance variables are created when an object is created with the use of the new keyword and destroyed when the object is destroyed.
+
+Default Values:
+Unlike local variables, instance variables are given default values based on their data type if you don't explicitly set a value for them.
+For example, int variables default to 0 and reference variables (like objects) default to null.
+
+Visibility: Instance variables can have access modifiers (private, public, protected, or default/package-private).
+These modifiers determine the visibility and accessibility of the instance variable from other classes.
+
+Static vs. Non-static: Instance variables are typically non-static, meaning they belong to a specific instance of the class.
+ There are also static variables which belong to the class itself rather than any specific instance.
+
+Here's an example to illustrate:
+
+
+public class Dog {
+
+    // These are instance variables
+    private String name;
+    private int age;
+
+     // Class (Static) Variable (static member variable)
+        public static String classVar;
+
+    // Constructor to initialize instance variables
+    public Dog(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Getter methods for instance variables
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+}
+
+// Creating objects (or instances) of the Dog class:
+Dog dog1 = new Dog("Buddy", 5);
+Dog dog2 = new Dog("Rex", 3);
+
+// Each object (dog1 and dog2) has its own separate copy of the name and age instance variables.
+In this example, name and age are instance variables of the Dog class. Each time you create a Dog object (like dog1 and dog2),
+you are creating a new instance of the Dog class with its own copy of these variables.
+
+
+stack - separate thread
+heap - shared [multiple object sharing same thread]
+
+
+Instance Variables:
+These are non-static variables and are declared in a class but outside a method or any block.
+They are called instance variables because their values are instance-specific and are not shared among instances.
+
+
+Class (or Static) Variables:
+These are declared with the static keyword in a class, but outside a method, constructor, or any block.
+There's only one copy of each class variable per class, regardless of how many objects are created from it.
+They are shared among all instances of the class
