@@ -3,6 +3,7 @@ package oop.src.com.dinesh.staticExample;
 // this is demo to show initialisation of static varibales
 public class StaticBlock {
 
+    // all static varibales and static method are accessible using StaticBlock not its object
     static  int a = 4;
     static  int b ;
 

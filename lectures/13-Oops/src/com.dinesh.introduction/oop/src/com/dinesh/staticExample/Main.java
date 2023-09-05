@@ -1,6 +1,7 @@
 package oop.src.com.dinesh.staticExample;
 
 public class Main {
+    // done
     public static void main(String[] args) {
         // object of human class
         Human obj1 =  new Human(22, "Dinesh", 100000, false);
@@ -16,7 +17,7 @@ public class Main {
         funObj.fun2();
 
 
-       //  greeting(); // Non-static method 'greeting()' cannot be referenced from a static context
+        // greeting(); // Non-static method 'greeting()' cannot be referenced from a static context
     }
 
     // we know that something which is not static, belongs to an object

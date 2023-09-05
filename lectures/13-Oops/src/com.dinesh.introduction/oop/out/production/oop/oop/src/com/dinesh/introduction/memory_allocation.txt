@@ -1,4 +1,4 @@
-************Concept of memory allocation when creating a new object in Java using the new keyword.*************
+done************Concept of memory allocation when creating a new object in Java using the new keyword.*************
 
 1. objects reside in a section of memory called the heap
 2. The heap is part of RAM(Random Access Memory)  dedicated to dynamic memory allocation, where variable are allocated and deallocated at run time
@@ -13,11 +13,12 @@ At this point, the object's instance variables are typically given their default
 
 2. Constructor Execution: Once the memory has been allocated, the constructor of the class is executed.
 This is where you typically override those default values and set up any other necessary initialization.
+If you use a parameterized constructor, the values you provide will overwrite the default values set during memory allocation.
 
 3. Reference Assignment:
    After the constructor finishes execution, the memory address of the newly created and initialized object is returned and can be assigned to a reference variable.
 
-  For example, when you write:
+  For example,
 
 
   Person person = new Person();
@@ -135,7 +136,8 @@ Stack:          Heap:
 (empty)         +-------------------+
                 |  GC eligible       |
                 +-------------------+
-Note: Even though the object is eligible for garbage collection, it might not be immediately collected. The actual collection will depend on several factors related to the garbage collector's operation.
+Note: Even though the object is eligible for garbage collection,
+it might not be immediately collected. The actual collection will depend on several factors related to the garbage collector's operation.
 
 Post Garbage Collection:
 When the garbage collector runs and reclaims the memory of the now-unreachable Person object:
@@ -144,8 +146,7 @@ Stack:          Heap:
 (empty)         (empty)
 Program Termination:
 When the entire program (JVM) terminates, both the stack and heap memory are cleared.
-Remember, this is a very simplified representation. The real workings of the JVM, memory allocation, and garbage collection are more complex. However, this should give you a visual understanding of how memory is managed in terms of the stack and heap during object creation and lifecycle.
-
+Remember, this is a very simplified representation. The real workings of the JVM, memory allocation, and garbage collection are more complex.
 
 
 
@@ -153,3 +154,8 @@ Constructor overloading is not about "overriding" anything;
  rather, it's about providing multiple ways to instantiate an object of a class
  Constructor Overloading: This is when you have multiple constructors in the same class, each with a different parameter list
 
+/*
+both methods and constructors are overloaded.
+At compile time,
+the Java compiler determines which method or constructor to use based on the arguments passed.
+*/

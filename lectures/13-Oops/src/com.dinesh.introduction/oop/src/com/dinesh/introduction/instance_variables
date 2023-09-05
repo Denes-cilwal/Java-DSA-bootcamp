@@ -51,7 +51,8 @@ Dog dog1 = new Dog("Buddy", 5);
 Dog dog2 = new Dog("Rex", 3);
 
 // Each object (dog1 and dog2) has its own separate copy of the name and age instance variables.
-In this example, name and age are instance variables of the Dog class. Each time you create a Dog object (like dog1 and dog2),
+In this example, name and age are instance variables of the Dog class.
+ Each time you create a Dog object (like dog1 and dog2),
 you are creating a new instance of the Dog class with its own copy of these variables.
 
 
