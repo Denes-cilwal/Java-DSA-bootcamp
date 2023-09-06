@@ -44,7 +44,9 @@ public class Main {
 /*
 There are two types of polymorphism in Java:
 
-Compile-time (or static) polymorphism: This is achieved through method overloading.
+Compile-time (or static) polymorphism:
+in java no operator overloading
+This is achieved through method overloading.
 Runtime (or dynamic) polymorphism: This is achieved through method overriding and is the focus of your code.
 Method Overriding and Upcasting
 Method overriding means defining a method in a child class that already exists in the parent class with the same signature (name and parameters). The child class method must have the same return type or a subtype of the return type of the parent class overridden method.

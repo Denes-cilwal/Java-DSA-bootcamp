@@ -20,8 +20,12 @@ public class BoxWeight extends Box{
 
     BoxWeight(double side, double weight){
         super(side);
+        this.weight =  weight;
+
 
     }
+
+
 
     // @Override
     // never been called , cannot override them even though you can inherit
@@ -31,7 +35,7 @@ public class BoxWeight extends Box{
 
     public BoxWeight(double l, double h, double w, double weight) {
         super(l, h, w); // what is this ? call the parent class constructor
-        // used to initialize value present in parent class,
+        // used to initialize value present in parent class becuase intialize happens in parent class not in child class as child class will only be able to access it,
         // but it cannot access the properties of parent class that is private
         // subclass derived m base class
         this.weight = weight;

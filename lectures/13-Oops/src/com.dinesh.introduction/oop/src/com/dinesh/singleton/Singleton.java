@@ -1,6 +1,7 @@
 package oop.src.com.dinesh.singleton;
 
 public class Singleton {
+    // done
     // it just classes where only one object is allowed to create
     // when we create only 1 obj, you should not allow anyone  call construct
     // everytime constructor is called new object is created

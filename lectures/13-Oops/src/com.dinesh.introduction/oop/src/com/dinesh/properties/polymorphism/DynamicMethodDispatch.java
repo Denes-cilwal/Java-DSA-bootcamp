@@ -7,12 +7,14 @@ class Animal {
 }
 
 class Dog extends Animal {
+    @Override
     void sound() {
         System.out.println("Dog barks");
     }
 }
 
 class Cat extends Animal {
+    @Override
     void sound() {
         System.out.println("Cat meows");
     }
@@ -44,10 +46,18 @@ public class DynamicMethodDispatch {
  */
 
 /*
- When you compile your Java code, the Java compiler generates bytecode, which is a set of instructions for the Java Virtual Machine (JVM). The JVM uses this bytecode to execute your program. The bytecode retains information about the objects and their class hierarchy, which is essential for polymorphism.
+ When you compile your Java code,
+ the Java compiler generates bytecode, which is a set of instructions for the Java Virtual Machine (JVM).
+ The JVM uses this bytecode to execute your program.
+  The bytecode retains information about the objects and their class hierarchy, which is essential for polymorphism.
 
 The Role of the Method Table (vTable)
-For every class, the JVM maintains something called a method table or vTable (virtual table). This table holds the addresses of all the methods defined in that class. If a method is overridden in a subclass, the address in the vTable for that method points to the overridden method of the subclass, not the method from the superclass.
+For every class,
+the JVM maintains something called a method table or vTable (virtual table).
+This table holds the addresses of all the methods defined in that class.
+If a method is overridden in a subclass,
+the address in the vTable for that method points to the overridden method of the subclass,
+not the method from the superclass.
 
 Runtime Resolution Process:
 Object Creation: When you create an object, say of type Dog (from our previous example), the JVM allocates memory for that object. This memory contains an implicit reference (or pointer) to the method table of its class.

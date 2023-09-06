@@ -30,10 +30,18 @@ public class Box {
     }
 
     Box(double l, double h, double w){
+
         this.h = l;
         this.l = h;
         this.w = w;
     }
+
+    Box(Box old){
+        this.h = old.h;
+        this.l =old.l;
+        this.w =old.w;
+    }
+
 
     public int getAge() {
         // hiding age detail under class Box under single unit - encapsulation of data
