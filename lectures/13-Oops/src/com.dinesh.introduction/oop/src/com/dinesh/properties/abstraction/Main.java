@@ -14,4 +14,6 @@ public class Main {
 }
 
 
-// data hiding(hiding data for security and complexity) vs encapsulation (wrapping data only for resolving the complexity of system)
+//vvimp- data hiding(hiding data for security and complexity) vs encapsulation (wrapping data only for resolving the complexity of system)
+
+// abstraction is design level and encapsulation is internal mechanism

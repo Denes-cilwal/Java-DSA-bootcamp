@@ -54,9 +54,11 @@ public class Main {
 
 
 
+
         // with args
         BoxWeight boxArgs =new BoxWeight(10, 11,12, 13);
         System.out.println(boxArgs.l + " " + boxArgs.w + " " + boxArgs.h + " " + boxArgs.weight);
+        BoxWeight.greeting(); // the convention is to access by class Name
 
     }
 }

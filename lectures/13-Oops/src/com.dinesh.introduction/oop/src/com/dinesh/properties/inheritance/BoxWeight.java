@@ -27,10 +27,11 @@ public class BoxWeight extends Box{
 
 
 
+    // can static method be overridden ?
     // @Override
     // never been called , cannot override them even though you can inherit
     static void  greeting(){
-        System.out.println("Hey I am in box class,Greeting!");
+        System.out.println("Hey I am in box weight class,Greeting!");
     }
 
     public BoxWeight(double l, double h, double w, double weight) {
