@@ -1,5 +1,6 @@
 package oop.src.com.dinesh.abstractDemo;
 /*
+// done
 In Java, static methods are associated with the class, not with an instance (or object) of the class.
 This is why we can call them without creating an instance of the class. Because they are associated with the class and not an instance, the concept of overriding (which pertains to instance methods and behavior) doesn't apply to them.
 
@@ -32,6 +33,9 @@ class SubClass extends SuperClass {
 public class StaticmethodOveriden {
     public static void main(String[] args) {
         SuperClass obj = new SubClass();
-        obj.display(); // This will print "Static method from SuperClass", not from SubClass because static method cannot be override
+        obj.display(); // This will print "Static method from SuperClass", not from SubClass because static method cannot be overriden
+
+        SubClass sub = new SubClass();
+       //  sub.display() // no method to access in compile time
     }
 }

@@ -14,9 +14,11 @@ public class Main {
          */
 
 
+
+
         // can we create object for abstract class Let try it
-        // no we cannot create abstract class object we need to override method inside of abstract class
-        // because it is just a method
+        // no we cannot create abstract class object we need to override method inside abstract class
+        // because it is just a method declaration, it does not have body it gives us error
         /*
         Parent mom = new Parent(45) {
             @Override
@@ -32,6 +34,7 @@ public class Main {
         */
 
         // even though we cannot create abstract object, but we can do that
+        // java run time can be accessed with parent reference class
         Parent daughter1 = new Daughter(30);
         daughter1.career();
 

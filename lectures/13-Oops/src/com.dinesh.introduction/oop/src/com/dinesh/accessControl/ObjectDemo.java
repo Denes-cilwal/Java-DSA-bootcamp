@@ -35,10 +35,14 @@ public class ObjectDemo {
     public static void main(String[] args) {
         ObjectDemo obj = new ObjectDemo(34,  56.7f);
         ObjectDemo obj2 = new ObjectDemo(45,  78.9f);
-        System.out.println(obj.hashCode()); // unique representation of number by value // hashcode is not address
+        System.out.println(obj.hashCode());
+        // unique representation of number by value // hashcode is not address
+
 
         /*
+
         if (obj < obj2 ){
+
             // java will get confused since obj has two variable num and gpa which one to compare
             System.out.println("obj1 is less than obj2");
         }

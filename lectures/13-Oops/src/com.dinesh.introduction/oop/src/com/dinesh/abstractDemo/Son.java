@@ -10,6 +10,8 @@ public class Son extends  Parent{
 
     @Override
     void career() {
+        // all the child class must over-ride parent class,
+        // because parent class only contains method declaration no body part
         System.out.println("I am going to be a pilot");
     }
 
@@ -19,9 +21,19 @@ public class Son extends  Parent{
     }
 
 
+    @Override
+    void divorce(){
+        System.out.println("She is having divorce");
+    }
+
+
     // can we create constructor of abstract class
 
 
+    @Override
+    void greet(){
+        System.out.println("normal method of abstract class be overridden");
+    }
 
 
 }

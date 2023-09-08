@@ -16,4 +16,10 @@ public class Daughter extends Parent{
         System.out.println("I love Iron Man");
 
     }
+
+    @Override
+    void divorce() {
+        System.out.println("I love Iron Man");
+
+    }
 }

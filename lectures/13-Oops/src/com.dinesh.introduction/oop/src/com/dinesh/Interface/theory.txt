@@ -30,9 +30,11 @@
      Interfaces(is not a class) basically contains only abstract function (methods) only method definition
      but abstract class can have abstract method as well no abstract method(concrete implementation)
 
-     Interface says what the class is doing not how it is doing
+     // Interface says what the class is doing not how it is doing
      the variable declared in the Interface are by default final
-     // why final by default if you create variable in an interface, interface cannot have constructor then how can you initialize  that , that's why they are final because final variable always need to initialized
+     // why final by default if you create variable in an interface,
+     // interface cannot have constructor then how can you initialize
+     // that , that's why they are final because final variable always need to initialized
 
      // and in the abstract it contain final or non-final
       // object cannot be created of Interface as contains abstract method (we cannot create)
