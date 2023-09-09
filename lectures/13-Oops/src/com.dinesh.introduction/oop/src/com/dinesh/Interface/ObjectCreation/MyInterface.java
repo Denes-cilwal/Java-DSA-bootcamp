@@ -1,9 +1,13 @@
 package oop.src.com.dinesh.Interface.ObjectCreation;
 
 /*
-        In Java, you cannot directly instantiate (create an object of) an interface. This means you cannot do something like this:
-        MyInterface obj = new MyInterface();  // This is incorrect and will result in a compile-time error.
-        However, you can use an interface reference to point to an object of a class that implements that interface. Here's an example:
+        In Java,
+        you cannot directly instantiate (create an object of) an interface.
+        This means you cannot do something like this:
+        MyInterface obj = new MyInterface();
+         // This is incorrect and will result in a compile-time error.
+        However, you can use an interface reference to point to an object of a class that implements that interface.
+        Here's an example:
 
 */
 

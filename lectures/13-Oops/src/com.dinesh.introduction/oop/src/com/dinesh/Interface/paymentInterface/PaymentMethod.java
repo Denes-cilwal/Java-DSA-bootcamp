@@ -27,8 +27,9 @@ public interface PaymentMethod {
     shorter version is more idiomatic in Java
      */
 
-     boolean authorizePayment(double amount);
-     void processPayment(double amount);
+     // by default abstract
+       boolean authorizePayment(double amount);
+        void processPayment(double amount);
 
 }
 

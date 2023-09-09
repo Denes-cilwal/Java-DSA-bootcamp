@@ -13,4 +13,7 @@ public class CreditCard implements PaymentMethod{
     public void processPayment(double amount) {
         System.out.println("Payment processed for credit card");
     }
+
+
+
 }

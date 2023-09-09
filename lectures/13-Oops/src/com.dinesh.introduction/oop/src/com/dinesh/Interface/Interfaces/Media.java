@@ -1,5 +1,4 @@
-package oop.src.com.dinesh.Interface;
-
+package oop.src.com.dinesh.Interface.Interfaces;
 
 public interface Media {
     void start();
