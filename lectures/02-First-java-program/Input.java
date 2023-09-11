@@ -11,12 +11,17 @@ public class Input {
         // pass primitive types in Scanner
         // Scanner takes from where you are taking input
 
-        Scanner input =  new Scanner(System.in);
+
+        Scanner input =  new Scanner(System.in); // creating objects and parsing parameters
+        // system.in is your keyword
+       // input.nextInt() // function provided by scanner class
 
         // modify out
         // next Integer
         // out is
+        // println in the out whatever you have output here is console
        System.out.println(input.nextInt());
+
 
        // next string
         System.out.println(input.nextInt());

@@ -2,6 +2,7 @@
 import java.util.Scanner;
 
 public class Sum {
+    //done
     public static void main(String[] args) {
 //         condition :- 2 types must be compatible
 //         des type from be greater than src type
