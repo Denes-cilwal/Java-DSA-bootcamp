@@ -1,5 +1,6 @@
 public class Min_Max {
     public static void main(String[] args) {
+        // done
         int[] arr = {1,2,23,9,28};
         System.out.println(max(arr));
         System.out.println(maxRange(arr, 1,4));

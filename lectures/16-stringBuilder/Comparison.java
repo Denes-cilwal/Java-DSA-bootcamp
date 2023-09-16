@@ -1,4 +1,4 @@
-public class Comparision {
+public class Comparison {
     public static void main(String[] args) {
         String a = "kunal";
         String b = "Kunal";
@@ -15,6 +15,12 @@ public class Comparision {
         // but equals only considers value check not location
         System.out.println(name1.equals(name2)); // true
         // but equals also give false if diff value
+        // string act like char array but we cannot do
+       // System.out.println(name1[0]); //
+
+
+        // we can do to access like array
+        System.out.println(name1.charAt(0));
 
     }
 }

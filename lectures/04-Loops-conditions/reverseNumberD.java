@@ -2,9 +2,11 @@ package com.dinesh;
 
 
 public class reverseNumberD {
+    //done
 
-    // needLastDigit = num % 10;
-    // removeLastDigit =  num/10;
+
+    // needLastDigit = num % 10 =  remainder;
+    // removeLastDigit =  num/10 = gives divedend;
     public static void main(String[] args) {
 
         int num = 1234, reversed = 0;

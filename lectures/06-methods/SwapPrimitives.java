@@ -12,8 +12,8 @@ public class SwapPrimitives {
 //        b = temp;
 
         swap(a, b); // is this actually going to swap or not - Ans is no
-        System.out.println("a =" + a);
-        System.out.println("b =" + b);
+        System.out.println("am =" + a);
+        System.out.println("bm =" + b);
 
 
     }
@@ -42,5 +42,5 @@ public class SwapPrimitives {
 
 /*
  //  primitive are int, string, char, byte are passed by value
- //  objects and stuff - passing value of the reference variables
+ //  objects and references  - passing by value of that reference variables both pointing to same object [reference object is passed]
  */

@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class MethodSum {
+    // done
     /*
      return_type name(){
 
@@ -18,8 +19,8 @@ public class MethodSum {
         // do not want to return anything use void
 
     }
-    static  void sum1(){
-
+    static  int  sum1(){
+     return 1;
     }
 
 

@@ -3,6 +3,7 @@ package com.dinesh;
 import java.util.Scanner;
 
 public class largestD {
+    // done
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int a = in.nextInt();
@@ -28,15 +29,15 @@ public class largestD {
          */
 
         // no need to check a > b , a > c
-        int max = 0;
-        if (a > b) {
-            max = a;
-        } else {
-            max = b;
-        }
-        if (c > max) {
-            max = c;
-        }
+//        int max = 0;
+//        if (a > b) {
+//            max = a;
+//        } else {
+//            max = b;
+//        }
+//        if (c > max) {
+//            max = c;
+//        }
 
         //
         int maxNumber = Math.max(c, Math.max(a, b));

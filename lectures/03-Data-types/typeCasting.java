@@ -2,6 +2,7 @@
 import java.util.Scanner;
 
 public class typeCasting {
+    // type => done
     public static void main(String[] args) {
         // cannot be converted
         Scanner input = new Scanner(System.in);
@@ -28,6 +29,8 @@ public class typeCasting {
 
 
 
+
+
 //        float num1  =  input.nextInt(); // this works
 //        int num1 = input.nextFloat()// do not works
 
@@ -41,9 +44,12 @@ public class typeCasting {
         // int num1 = input.nextFloat(); // gives error because num1 int type < float
         // type
 
+        // it not automatic conversion than how do I convert it to that where type casting comes
+        // narrowing conversion - float (bigger type ) ---> to small type
         // type casting : explicit type conversion : narrowing conversion
         // type casting : explicit type conversion : narrowing conversion
         // narrow to int
+        // type casting () remember this
         int newNumber = (int) (67.90f);
         System.out.println(newNumber);
 
@@ -59,6 +65,8 @@ public class typeCasting {
         byte e = 127;
         // when you are doing byte operations automatically it converts to int
         int res = c * d / e;
+
+//        c*d // automatically convert to int as expression
 
         System.out.println(res);
         // float - int + double = double (multiple types)
@@ -82,3 +90,11 @@ public class typeCasting {
         // unicode -- Java supports
     }
 }
+
+
+//https://www.codingninjas.com/studio/library/type-conversion-and-type-casting-in-java
+/*
+type conversion => casting down => widening=> implicit conversion => done by compiler =>  float num1  =  input.nextInt()
+type casting [people made casting]=> explicit => by programmer =>  byte b = (byte) (a) => higher assign to lower => so casting up
+
+ */

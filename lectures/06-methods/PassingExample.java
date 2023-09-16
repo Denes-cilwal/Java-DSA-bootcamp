@@ -1,4 +1,5 @@
 public class PassingExample {
+    // done
     public static void main(String[] args) {
         String newName = "Lionel Messi";
         // copy of value of referenced variable is passed in new Name
@@ -15,7 +16,7 @@ public class PassingExample {
     static void greet1(String name) {
         // Java is always passed by value not by pass by referenced
         // array is changing in Change value file but string is not changing, because string is immutable
-        // also actually changing creating new object not changing original objects
+        // also actually creating new object not changing original objects
         name = "david";
         System.out.println(name);
     }
@@ -38,3 +39,4 @@ public class PassingExample {
 
     name ---------- "david"(only change in its scope)
  */
+

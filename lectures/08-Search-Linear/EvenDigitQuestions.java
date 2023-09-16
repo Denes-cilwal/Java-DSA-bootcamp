@@ -1,5 +1,4 @@
-public class
-EvenDigitQuestions {
+public class EvenDigitQuestions {
     // Given an array nums of integers, return how many of them contain an even number of digits.
     /*
     12 contains 2 digits (even number of digits).
@@ -12,8 +11,8 @@ EvenDigitQuestions {
     // Problem Statement :1295  https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
     public static void main(String[] args) {
     int[] numArr = {12,345,2,6,-7896};
-//        System.out.println(FindNumbers(numArr));
-        System.out.println(digits(622222));
+   int result = FindNumbers(numArr);
+        System.out.println(result);
     }
 
  // Find the no of even count
@@ -41,36 +40,41 @@ EvenDigitQuestions {
 
     }
 
+
+
+
+
+
     // count number of digits in num
-//    static int digits(int num){
-//        // edge cases
-//        if (num < 0){
-//            num = num * (-1);
-//        }
-//
-//        if (num ==0){
-//            return  1;
-//        }
-//
-//        int count = 0;
-//        while (num > 0){
-//            count ++;
-//            num =  num /10; // num /= 10;
-//        }
-//        return   count;
-//    }
+    static int digits(int num){
+        // edge cases
+        if (num < 0){
+            num = num * (-1);
+        }
+
+        if (num ==0){
+            return  1;
+        }
+
+        int count = 0;
+        while (num > 0){
+            count ++;
+            num =  num /10; // num /= 10;  12/10 = 1
+        }
+        return   count;
+    }
 
 
 
     // 2nd way to count number of digits in num
 
-    static int digits(int num) {
-        // edge cases
-        if (num < 0) {
-            num = num * (-1);
-        }
-        return (int)(Math.log10(num)) + 1;
-    }
+//    static int digits(int num) {
+//        // edge cases
+//        if (num < 0) {
+//            num = num * (-1);
+//        }
+//        return (int)(Math.log10(num)) + 1;
+//    }
 
 
 

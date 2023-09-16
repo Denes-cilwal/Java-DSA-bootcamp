@@ -2,6 +2,7 @@ package com.dinesh;
 
 public class statementsD {
     public static void main(String[] args) {
+        // done
         /*
          * syntax of if statements
          * // if (boolean expressions T or F){
@@ -26,6 +27,5 @@ public class statementsD {
         } else {
             salary += 1000;
         }
-
     }
 }

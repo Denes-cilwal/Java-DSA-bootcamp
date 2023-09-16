@@ -7,6 +7,8 @@ public class Arguments {
 
 
 
+
+
     // syntax with parameters : formal (copy)
     static int sum(int a,int  b){
         // a will be replaced with 2 and b with 3

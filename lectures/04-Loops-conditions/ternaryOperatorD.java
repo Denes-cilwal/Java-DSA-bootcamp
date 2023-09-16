@@ -2,6 +2,7 @@ package com.dinesh;
 
 public class ternaryOperatorD {
     // 3 operands
+    // done
     // variable = condition ? statement1 : statement2
     public static void main(String[] args) {
         int larger = (5>3) ? 5 : 3;

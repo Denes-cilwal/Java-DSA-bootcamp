@@ -1,4 +1,2 @@
-public class
-
-Armstrong {
+public class Armstrong {
 }

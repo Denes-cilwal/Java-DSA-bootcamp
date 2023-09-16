@@ -3,12 +3,15 @@ import java.util.Scanner;
 
 public class InputArray {
 
+    // done
+
     public static void main(String[] args) {
 
 
 
         Scanner in  =new Scanner(System.in);
         int num = in.nextInt();
+
 
 
 
@@ -28,9 +31,16 @@ public class InputArray {
         // for each element in array
         int[] arr = new int[5];
         for (int i:arr
+                // fot every element in array, print the element i is the individual element here not index
         ) {
             System.out.println(i + "");
         }
+
+        int[] arr1 = new int[6];
+        for (int element: arr1) {
+            System.out.println(element);
+        }
+
 
         // array of object
         String[] str = new  String[4];
@@ -38,9 +48,11 @@ public class InputArray {
             str[i] = in.next();
 //            System.out.println(str);
         }
-        System.out.println(Arrays.toString(str));
+        System.out.println(Arrays.toString(str));   // num array to format integer array
 
     }
+
+
 
     /*
     // memory management
@@ -58,6 +70,7 @@ public class InputArray {
     Strings can be allocated either on Stack or on heap.
      */
 
+//    by default if there is no value for every ref variable it is null
 
 }
 

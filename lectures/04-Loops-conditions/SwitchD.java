@@ -64,5 +64,19 @@ public class SwitchD {
      }
 }
 
+/*
+return, break, continue Instructions
+
+The return instruction is used either to return a function value or to terminate the execution of a function. The exit may be from anywhere within the function body, including loops or nested blocks. If the function returns a value, the return instruction is required, furthermore it contains the expression of the appropriate type. <return> ::= return [<expression>]
+
+{ ... fornum i, 100 { if error { return 0 // terminating the execution of the function } ... } ... return a + b }
+
+The break instruction terminates the execution of the loop. break is likely to be located within nested blocks. If a program contains several nested loops, break will exit the current loop.
+
+while b > c { for i = 100, i > 0, i-- { if !myfunc( i ) { break //terminating the execution of for loop } } b++ }
+
+
+ */
+
 
 

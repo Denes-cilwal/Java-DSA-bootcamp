@@ -1,4 +1,5 @@
 public class agnosticSearch {
+//    divide and conquer technique.
     public static void main(String[] args) {
 
         System.out.println("order-agnostic search");
@@ -38,14 +39,14 @@ public class agnosticSearch {
             if (isAsc){
                 if (target < arr[mid]) {
                     end = mid - 1;
-                } else if (target > arr[mid]) {
+                } else {
                     start = mid + 1;
                 }
 
             }else{
                 if (target > arr[mid]) {
                     end = mid - 1;
-                } else if (target > arr[mid]) {
+                } else  {
                     start = mid + 1;
                 }
             }

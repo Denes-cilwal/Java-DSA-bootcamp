@@ -2,13 +2,12 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class MultiDimension {
+    // done
+    // row is fixed column is dynamic
     public static void main(String[] args) {
         /*
      arr =    [
-         [
-         1 2 3
-         4,5,7
-          ],
+         [1 2 3]
          [4 5 6],
          [7 8 9],
          ]
@@ -16,22 +15,23 @@ public class MultiDimension {
 
 //        System.out.println(arr.length); // no of rows
 
-//        int[][]  arr = {
-//                // vary for every index of array
-//                {1,2,3}, // 0th index
-//                {4,5},   // 1st index
-//                {7,8,9, 2},    // 2nd index - arr[2] = {7,8,9,2}
-//
-//        };
-//        int[][] arr1 =  new int[3][3];
-//        for (int row = 0; row < arr1.length; row++){
-//
-//        }
+
+       int[][]  arr = {
+//                vary for every index of array
+                {1,2,3}, // 0th index // arr[0]
+                {4,5},   // 1st index
+                {7,8,9, 2},    // 2nd index - arr[2] = {7,8,9,2}
+
+        };
+
 
         Scanner in = new Scanner(System.in);
 //        int[][] arr = new int[3][3];
-        int[][] arr = new int[3][3];
-        System.out.println(arr.length); // no of rows is mandatory
+//        int[][] arr = new int[3][3];
+//        System.out.println(arr.length); // no of rows is mandatory, columns is not mandatory
+
+
+
 
 
         // ta
@@ -54,15 +54,38 @@ public class MultiDimension {
             System.out.println();
         }
 
-        // 2D array from microsoft
-            // for every element in arr
-        for (int[] a :
-                arr) {
-            System.out.println(Arrays.toString(a));
+//        // 2D array from microsoft
+//            // for every element in arr
+//        for (int[] a :
+//                arr) {
+//            System.out.println(Arrays.toString(a));
+//
+//        }
 
-        }
+
+
+
+        // for each concept - in this arr, the type of data is integer
+//        for (int i:arr
+//            // fot every element in array, print the element i is the individual element here
+//        ) {
+//            System.out.println(i + "");
+//        }
     }
 
+    // in multi-dimensional array
+    // the type of data |element is array itself
+    //  arr =    [
+    //         []
+    //         [],
+    //         [],
+    //         ]
+
+//for (int[] a :
+////                arr) {
+////            System.out.println(Arrays.toString(a));
+////
+////        }
 
 
 }

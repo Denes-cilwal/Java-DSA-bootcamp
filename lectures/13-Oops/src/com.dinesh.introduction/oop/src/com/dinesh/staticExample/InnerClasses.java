@@ -14,7 +14,7 @@ public class InnerClasses { // outside class cannot be static
     
 
 
-    public Test(String name) {
+   public Test(String name) {
          // constructor cannot be static as constructor are always tied to object
             this.name = name;
         }

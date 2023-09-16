@@ -31,7 +31,12 @@ public class SwitchProblems {
             default:
                 System.out.println("Enter valid empID");
         }
+
+        // following statement is printed but current loop is broken
+        System.out.println(" // using break => following statement after loop is printed but current loop is broken");
     }
+
+
 
 
 

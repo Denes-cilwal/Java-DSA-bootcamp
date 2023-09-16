@@ -1,6 +1,7 @@
 public class ArrayMain {
 
     public static void main(String[] args) {
+        // done
         // Q : store a number
         int a = 19;
 
@@ -10,6 +11,8 @@ public class ArrayMain {
         int a3 = 19;
         int a4 = 19;
         int a5=20;
+
+
 
         // array is collection of primitive, complex data types
         // list of elements of same type
@@ -27,9 +30,12 @@ public class ArrayMain {
         int[] num2 = {23, 12,45,67,67};
 
 
+
         // internal working
         int[] ros; // declare of array, here ros is getting defined into the stack(not pointing to object here)
-        ros = new int[5]; //  ;actual memory creation (actual object is being created in the heap memory)
+        ros = new int[5]; // this is initialization ;actual memory creation (actual object is being created in the heap memory)
+
+
 
 // size is defined in compile time not in runtime(size does not depend upon run time )
         /*

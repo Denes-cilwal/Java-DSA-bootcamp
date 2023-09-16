@@ -2,6 +2,7 @@
 public class typePromotion {
 
     public static void main(String[] args) {
+        // done
         // Java automatically promotes each byte short or char operand to int
         // when evaluating en expression.
         // if one operand is long, float or double the whole expression is promoted to
@@ -36,6 +37,16 @@ public class typePromotion {
        byte  m = (byte) (n * 2);
         System.out.println(m);
 
+        // char is larger than byte
+        // the range of byte is between -128 to 127 but the range of char is from 0 to 65535 because a byte is a signed 8-bit data type and char is an unsigned 16-bit data type hence, its maximum value is 2 ^ 16 - 1 which is 65535.
+        char z = 'm';
+        byte byt = (byte) z;
+
+//        higher value promotion
+        // promoted to higher value char,
+        // byte -> int
+        // int --> float
+        // float --> double
     }
 
 }

@@ -1,2 +1,4 @@
-package placehoder;public class txt {
+package placehoder;
+
+public class txt {
 }

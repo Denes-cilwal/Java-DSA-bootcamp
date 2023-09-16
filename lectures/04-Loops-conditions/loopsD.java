@@ -3,6 +3,7 @@ package com.dinesh;
 import java.util.Scanner;
 
 public class loopsD {
+    // done
     public static void main(String[] args) {
         /* Q : Print numbers from 1 to 6
         System.out.println(1);
@@ -17,22 +18,30 @@ public class loopsD {
         for (initial; condition; increment){
             // body
         }
-         for (int i = 1; i<=5; i+=1){
-        System.out.println(i);
-    }
         */
+//         for (int i = 1; i<=5; i+=1){
+//        System.out.println(i);
+//    }
+
 
 
         // print numbers from 1 to n (n is number that user inputs)
 
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
+//        Scanner in = new Scanner(System.in);
+//        int n = in.nextInt();
+//
+//        for (int i = 1; i<=n; i++){
+//            System.out.println(i);
+//        }
 
-        for (int i = 1; i<=n; i++){
-            System.out.println(i);
-        }
 
 
+//        int num =1 ;
+//        while (num <=5){
+//            //
+//            System.out.println(num);
+//            num ++;
+//        }
 
 
 
@@ -50,6 +59,9 @@ public class loopsD {
             while(num <= 5){
                 System.out.println(num);
                 num+=1;
+
+
+
         }
         */
 
@@ -57,7 +69,7 @@ public class loopsD {
         /*
          do{
          // one time loop running use do while
-         // once it will always execute
+         // in do while loop it will execute at least once
          // it will execute the body and then makes the check
          // body
          } while(condition)

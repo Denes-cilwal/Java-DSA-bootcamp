@@ -1,2 +1,4 @@
-package cyclicsort;public class Main {
+package cyclicsort;
+
+public class Main {
 }

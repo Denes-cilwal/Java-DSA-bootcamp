@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class StringExample {
+    // done
     public static void main(String[] args) {
         String message = greet(); // return string
         System.out.println(message);
@@ -13,6 +14,9 @@ public class StringExample {
 
        String na = greet1();
        System.out.println(na);
+
+       int s = greet2();
+       System.out.println(s);
     }
     static String myGreet(String name) {
 
@@ -32,6 +36,7 @@ public class StringExample {
     static String greet1(){
         return  "Hello";
     }
-
-
+    static  int greet2(){
+        return  2;
+    }
 }

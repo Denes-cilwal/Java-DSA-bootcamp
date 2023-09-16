@@ -1,13 +1,14 @@
 import java.util.Arrays;
 
 public class PassingInfunctions {
+    // done
     public static void main(String[] args) {
         int[] num = {3,4,5,13};
         System.out.println(Arrays.toString(num));
         change(num);
         System.out.println(Arrays.toString(num));
 
-        update(num);
+//        update(num);
         System.out.println(Arrays.toString(num)); // original array got changed using mutable case
     }
 
@@ -17,14 +18,14 @@ public class PassingInfunctions {
         arr[0] = 99;
     }
 
+
+
+
     static  void update(int[] arr){
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = arr[i] + 1;
-
+                arr[i] =  arr[i] + 1;
         }
     }
-
-
 }
 
 
