@@ -6,7 +6,7 @@ public class TempConversion {
         System.out.println("Please enter temp in C: ");
         float tempC = in.nextFloat();
 
-        float tempF =  (tempC * (9/5) + 32);
+        float tempF =  (tempC * ((float) 9 /5) + 32);
         System.out.println(tempF);
     }
 

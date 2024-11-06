@@ -13,7 +13,7 @@ public class primitives {
         float marks = 98.67f;
 
 
-        // by default all decimal values are decimal , so if we want to store float value store with f at end
+
         // implicit conversion
         double largeDecimalNumbers = 4567654.4567; // 8
 
@@ -26,13 +26,7 @@ public class primitives {
         int y = 20;
         double y2 =  20 / 20.8f;
 
-        /*
-        Integer rol = 64;  // wrapper class // to add some functionality to primitives
-        rol.toString();
-                   */
 
-//        int a = 234, 000,000; // comma is not allowed
-        int b = 234_000_000;
         // type casting | conversion
         // with type compatible
         int num = (int)(67.89f);
